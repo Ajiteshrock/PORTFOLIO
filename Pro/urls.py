@@ -19,7 +19,7 @@ from pro_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index'),
+    path('',views.index,name= 'index'),
     path('index.html/',views.index,name='index'),
     path('services.html/',views.services,name='services'),
     path('contact.html/',views.contacts,name='contact')
