@@ -1,0 +1,408 @@
+{% load static %}
+<!doctype html>
+
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ajitesh</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    
+    <link rel="stylesheet" href={% static "css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "css/owl.carousel.min.css" %}>
+    <link rel="stylesheet" href={% static "css/magnific-popup.css" %}>
+    <link rel="stylesheet" href={% static "css/font-awesome.min.css" %}>
+    <link rel="stylesheet" href={% static "css/themify-icons.css" %}>
+    <link rel="stylesheet" href={% static "css/nice-select.css" %}>
+    <link rel="stylesheet" href={% static "css/flaticon.css" %}>
+    <link rel="stylesheet" href={% static "css/gijgo.css" %}>
+    <link rel="stylesheet" href={% static "css/animate.min.css" %}>
+    <link rel="stylesheet" href={% static "css/slick.css" %}>
+    <link rel="stylesheet" href={% static "css/slicknav.css" %}>
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+     <link rel="stylesheet" href={% static "css/responsive.css" %}>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <li><a class="navbar-brand nav-tabs" href={% url 'index' %}><h3>Ajitesh</h3></a></li>
+                                
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav class='right'>
+                                    
+                                    <ul id="navigation">
+                                        <li><a class="active" href={% url 'index' %}>home</a></li>
+                                        
+                                        <li><a href={% url 'services' %}>Projects</a></li>
+                                        <li><a href={% url 'contact' %}>Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                    <a  href={% url 'contact' %}>Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="shap_pattern d-none d-lg-block">
+                <img src={% static "img/about/grid.png" %} alt="">
+            </div>
+            <div class="social_links">
+                <ul>
+                    <li><a href="https://www.facebook.com/ajitesh.shukla.794"> <i class="fa fa-facebook"></i> </a></li>
+                    <li><a href="https://twitter.com/Ajitesh27425989"> <i class="fa fa-twitter"></i> </a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/ajitesh-mishra-074a97163/"> <i class="fa fa-linkedin"></i> </a></li>
+                    <li><a href="https://github.com/Ajiteshrock"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <h3 style="color:white;">
+                                Hello,I Am Ajitesh
+                            </h3 >
+                            <span style="color:white;">Data Analyst,Software Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- service_area  -->
+    <div class="service_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-65">
+                        <span><h5>Services Provided</h5></span>
+                        <h3>Machine Learning Modles  <br>
+                                & Software products</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service text-center">
+                        <div class="icon">
+                            <img src={% static "img/svg_icon/1.svg" %} alt="">
+                        </div>
+                        <h3>ML modles</h3>
+                        <p>I create basically both machine learning modles and deep learning as well , I work hard for it.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service text-center">
+                        <div class="icon">
+                            <img src={%  static "img/svg_icon/2.svg" %} alt="">
+                        </div>
+                        <h3>Web design</h3>
+                        <p>In web design I create web apps on a python framework called Django</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service text-center">
+                        <div class="icon">
+                            <img src={% static "img/svg_icon/3.svg" %} alt="">
+                        </div>
+                        <h3>Deep Learning</h3>
+                        <p>In Deep Learning I am currently working on NLP and Segmentation as well.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ service_area  -->
+
+    <!-- portfolio_area -->
+    <div class="portfolio_area portfolio_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title white_text text-center">
+                        <span>Projetcs</span>
+                        <h3>Some of my awesome <br>
+                                projetcs are here below</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ portfolio_area -->
+
+    <!-- portfolio_image_area  -->
+    <div class="portfolio_image_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-5">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src={% static "img/portfolio/1.png" %} alt="">
+                        </div>
+                
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                <a href="https://github.com/Ajiteshrock/Speech_recognition-Sytem"><h3>Speech_recognition-Sytem</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-7">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src={% static "img/portfolio/face.jpg" %} alt="">
+                        </div>
+                        <a href='https://github.com/Ajiteshrock/Face-Recognition-Using-OpenCv-'></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                <a href='https://github.com/Ajiteshrock/Face-Recognition-Using-OpenCv-'><h3>Face_recognition_system</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src={% static "img/portfolio/max.jpg" %} alt="">
+                        </div>
+                        
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                    <a href='https://github.com/Ajiteshrock/Python_CLI_Chat_Interface'><h3>Chat_server</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 ">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src={% static "img/portfolio/titanic.jpeg" %} alt="">
+                        </div>
+                        <a href={% static "img/portfolio/titanic.jpeg" %} class="popup popup-image"></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                   <a href ='https://github.com/Ajiteshrock/TITANIC-SURVIVAL-PREDICTION'><h3>Titanic_survival_prediction</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <!--/ portfolio_image_area  -->
+
+    <!-- about_me  -->
+    <div class="about_me">
+        <div class="about_large_title d-none d-lg-block">
+            
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-md-6">
+                    <div class="about_e_details">
+                        <h3>About me</h3>
+                        <p style="font-weight: bold; color:rgb(14, 8, 95); font-size: large;">Currently in the pre-final year of engineering via Computer Science. Basically I have an interest in Deep Learning and for deploying models of deep learning, I really like to work with web development tools.
+
+                            Searching for Interns in domains such as Deep learning, Full-stack development. </p>
+                        <p style="font-weight: bold; color:rgb(14, 8, 95); font-size: large;">Deep learning enthusiast Predictive modeling. Django .NLP, segmentation.</p>
+                        <div class="download_cv"> 
+                            <a class="boxed-btn3" href="https://drive.google.com/open?id=1eEktpx0RsrmF_teUVC9QFDG2nM7Ea0eM">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="about_img">
+                        <div class="color_pattern d-none d-lg-block">
+                            <img src={% static "img/about/color_grid.png" %} alt="">
+                        </div>
+                        <div class="my_Pic">
+                                <img src={% static "/img/about/about.jpg" %} alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ about_me  -->
+
+    
+    <!-- testimonial_area  -->
+    <div class="testimonial_area ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testmonial_active owl-carousel">
+                            <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src={% static "img/testmonial/quote.svg" %} alt="">
+                                            </div>
+                                            <p>
+                                                If you are fortunate enough to have a good friend or a best friend, then you have something that many people do not: a bond with another person that is truly unique and special.<br> 
+                                                </p>
+                                            <div class="testmonial_author">
+                                                <!--<div class="thumb">
+                                                        
+                                                </div>-->
+                                                <h3>Raghav Yadav</h3>
+                                                <span>Best Friend</span>
+                                                
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src={% static "img/testmonial/quote.svg" %}alt="">
+                                            </div>
+                                            <p> 
+                                                “There’s no other love like the love for a brother. There’s no other love like the love from a brother.”</p>
+                                            <div class="testmonial_author">
+                                                <!--<div class="fa-thumbs-down">
+                                                        
+                                                </div>-->
+                                                <h3>Aniket Mishra</h3>
+                                                <span>Brother</span>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /testimonial_area  -->
+    
+    <div class="discuss_projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="project_text text-center">
+                        <h3>Let’s discuss for a project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="boxed-btn3" href="https://www.linkedin.com/in/ajitesh-mishra-074a97163/">Message Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="menu_links">
+                            <ul>
+                                <li><a href={% url 'index' %}>About</a></li>
+                              <li><a href={% url 'services' %}>Projects</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="socail_links">
+                            <ul>
+                                <li><a href="https://www.facebook.com/ajitesh.shukla.794"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a href="https://twitter.com/Ajitesh27425989"> <i class="fa fa-twitter"></i> </a></li>
+                                <li><a href="https://www.linkedin.com/in/ajitesh-mishra-074a97163/"> <i class="fa fa-linkedin"></i> </a></li>
+                                <li><a href="https://github.com/Ajiteshrock"> <i class="fa fa-github"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved| Made by Ajitesh</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+    <!-- JS here -->
+    <script src={% static "js/vendor/modernizr-3.5.0.min.js" %}></script>
+    <script src={% static "js/vendor/jquery-1.12.4.min.js" %}></script>
+    <script src={% static "js/popper.min.js" %}></script>
+    <script src={% static "js/bootstrap.min.js" %}></script>
+    <script src={% static "js/owl.carousel.min.js" %}></script>
+    <script src={% static "js/isotope.pkgd.min.js" %}></script>
+    <script src={% static "js/ajax-form.js" %}></script>
+    <script src={% static "js/waypoints.min.js" %}></script>
+    <script src={% static "js/jquery.counterup.min.js" %}></script>
+    <script src={% static "js/imagesloaded.pkgd.min.js" %}></script>
+    <script src={% static "js/scrollIt.js" %}></script>
+    <script src={% static "js/jquery.scrollUp.min.js" %}></script>
+    <script src={% static "js/wow.min.js" %}></script>
+    <script src={% static "js/nice-select.min.js" %}></script>
+    <script src={% static "js/jquery.slicknav.min.js" %}></script>
+    <script src={% static "js/jquery.magnific-popup.min.js" %}></script>
+    <script src={% static "js/plugins.js" %}></script>
+    <script src={% static "js/gijgo.min.js" %}></script>
+
+    <!--contact js-->
+    <script src={% static "js/contact.js" %}></script>
+    <script src={% static "js/jquery.ajaxchimp.min.js" %}></script>
+    <script src={% static "js/jquery.form.js" %}></script>
+    <script src={% static "js/jquery.validate.min.js" %}></script>
+    <script src={% static "js/mail-script.js" %}></script>
+
+    <script src={% static "js/main.js" %}></script>
+</body>
+
+</html>
